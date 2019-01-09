@@ -44,14 +44,12 @@ html,body{
 	border-top-right-radius: 20px; 
 }
 #Navigacija{
-	background-image: transparent url('./Grafika/navigacija.png') no-repeat center-top;
+	background: transparent url('./Grafika/navigacija.png') no-repeat center top;
 	background-size: cover;
 	height: 30px;
 	width: 950px;
 }
 #Navigacija ul {
-	height: 30px;
-	width: 950px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -59,6 +57,7 @@ html,body{
 	align-items: center;
 	list-style-type: none; 
 	height: 30px;
+	margin: 0;
 }
 #Navigacija a:link,
 #Navigacija a:visited,
@@ -68,7 +67,17 @@ html,body{
 	font-weight: bold;
 	text-align: center;
 	color: white;
+	text-decoration: none;
+	border-bottom: 0px;
+	padding: 7px 10px;
+	box-sizing: border-box;
+	transition: all .75s ease;
+	transition: all 1s ease;
 }
+#Navigacija a:hover
+#Navigacija a:active{
+	background-color: rgba(115,155,210,.35);
+} 
 #Vsebina {
 	background-color:red;
 	min-height: 350px;
